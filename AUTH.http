@@ -1,0 +1,21 @@
+# Testing admin creation and retrieval
+POST http://localhost:3001/auth/register
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "securePassword999",
+  "email": "user@example.com"
+}
+
+
+###
+
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "securePassword999",
+  "email": "user@example.com"
+}
